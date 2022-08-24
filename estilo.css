@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 100%;
+}
+
+button {
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+    background-color: palevioletred;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+button:active {
+    background-color: #fff;
+    color: palevioletred;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab {
+    max-width: 975px;
+    display: flex;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.img-gallery {
+    position: absolute;
+}
+
+#tab-1-img,
+#tab-2-img,
+#tab-3-img {
+    display: none;
+    object-position: center;
+}
+
+.show {
+    display: block !important;
+    transition: .5s;
+}
+
+.marked {
+    opacity: .7;
+}
